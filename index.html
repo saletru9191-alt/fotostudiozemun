@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fotostudiozemun</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url('jjj.png') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+    }
+
+    .card {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 500px;
+      background: rgba(10,10,10,0.55);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 40px;
+      padding: 40px 30px;
+      text-align: center;
+      backdrop-filter: blur(18px);
+      box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    }
+
+    .profile-img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 25px;
+      background: black;
+    }
+
+    h1 {
+      color: white;
+      font-size: 48px;
+      margin-bottom: 15px;
+      font-weight: bold;
+      text-transform: lowercase;
+    }
+
+    .subtitle {
+      color: #d0d0d0;
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 35px;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      color: white;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 22px;
+      padding: 20px 25px;
+      margin-bottom: 18px;
+      font-size: 24px;
+      transition: 0.3s;
+    }
+
+    .link:hover {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-3px);
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .icon {
+      width: 35px;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .arrow {
+      font-size: 30px;
+      color: #cccccc;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #999;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="profilna.png" alt="Profilna Slika" class="profile-img">
+
+    <h1>fotostudiozemun</h1>
+
+    <p class="subtitle">
+      Vaši najlepši trenuci zaslužuju da traju zauvek.
+
+      Javite nam se na vreme i rezervišite svoj termin.
+    </p>
+
+    <a href="https://www.facebook.com/fotostudiozemun" class="link">
+      <div class="left">
+        <span class="icon"><i class="fab fa-facebook-f"></i></span>
+        <span>Facebook</span>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a href="https://www.youtube.com/@fotostudiozemunjunior4867" class="link">
+      <div class="left">
+        <span class="icon"><i class="fab fa-youtube"></i></span>
+        <span>YouTube</span>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a href="https://wa.me/4917682148639" class="link">
+      <div class="left">
+        <span class="icon"><i class="fab fa-whatsapp"></i></span>
+        <span>Pošalji poruku</span>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a href="tel:017682148639" class="link">
+      <div class="left">
+        <span class="icon"><i class="fas fa-phone"></i></span>
+        <span>Pozovi nas</span>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+
+    <footer>
+      Originalna stranica fotostudiozemun © 2026
+    </footer>
+  </div>
+
+</body>
+</html>
